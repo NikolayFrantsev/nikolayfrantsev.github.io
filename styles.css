@@ -2,6 +2,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   margin: 40px 40px 40px 90px;
   color: #222;
+  user-select: none;
+  cursor: default;
 }
 li {
   color: #444;
@@ -44,6 +46,7 @@ li::before {
 }
 h1::before {
   content: '✌️';
+  margin-right: 8px;
 }
 h1.shrug::before {
   content: '🤷';
@@ -83,4 +86,10 @@ li:nth-of-type(3) {
 }
 li:nth-of-type(4) {
   animation: fade 1s 2.5s backwards;
+}
+@media (prefers-reduced-motion) {
+  h1,
+  li:nth-of-type(n) {
+    animation-name: none;
+  }
 }
