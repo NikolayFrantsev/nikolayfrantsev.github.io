@@ -55,6 +55,9 @@ li:nth-of-type(2)::before {
   content: '💬';
 }
 li:nth-of-type(3)::before {
+  content: '📷';
+}
+li:nth-of-type(4)::before {
   content: '🚴‍♂️';
 }
 
@@ -77,4 +80,7 @@ li:nth-of-type(2) {
 }
 li:nth-of-type(3) {
   animation: fade 1s 2s backwards;
+}
+li:nth-of-type(4) {
+  animation: fade 1s 2.5s backwards;
 }
